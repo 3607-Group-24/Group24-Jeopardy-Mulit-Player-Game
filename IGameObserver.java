@@ -1,4 +1,4 @@
 public interface IGameObserver {
     
-    void updateGameState();
+    void update();
 }
