@@ -9,10 +9,13 @@ public class Game {
     public Map<Category, Question> GameBoard;
 
 
-
     public Game(QuestionLoader loader, List<Player> players) {
         currentLoader = loader;
         this.players = players;
+    }
+
+    public void setState(IGameState initialState){
+        
     }
 
     public void attachObserver(IGameObserver observer){
@@ -26,8 +29,22 @@ public class Game {
         }
     }
 
+    public void endGame(){
+        
+    }
 
+    public void startGame(){
+        
+    }
 
+    public Question processSelection(Category category, int value){
+       
+        return GameBoard.get(category);
+    }
+
+    public void processAnswer(String answer){
+        
+    }   
 
 
 
